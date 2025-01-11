@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/flexbox-grid.css?version=0.1">
   <link rel="stylesheet" href="css/pink.css?version=0.1">
   <link rel="stylesheet" href="css/images.css?version=0.1">
-  <link rel="stylesheet" href="css/shopping.css?version=0.5">
+  <link rel="stylesheet" href="css/shopping.css?version=0.v6">
 </head>
 <body>
 
@@ -38,49 +38,48 @@
         
         <div id="app3">
             <form v-on:submit.prevent="addItem">
-            <p>
-                  What do you need? <br>
-            <input type="text" required placeholder="item name.." v-model="itemName">
-            </p>
-            <p>
-                  How many? <br>
-            <input type="number" placeholder="number of items.." v-model="itemNumber">
-            </p>
-            <p>
-                  Important?
-            <label>
-            <input type="checkbox" v-model="itemImportant">
-                    {{ itemImportant }}
-            </label>
-            </p>
-            <button type="submit">Add item</button>
+              <p>
+                What do you need? <br>
+                <input type="text" required placeholder="item name.." v-model="itemName">
+              </p>
+              <p>
+                How many? <br>
+                <input type="number" placeholder="number of items.." v-model="itemNumber">
+              </p>
+              <p>
+                Important?
+                <label>
+                  <input type="checkbox" v-model="itemImportant">
+                  {{ itemImportant }}
+                </label>
+              </p>
+              <button type="submit">Add item</button>
             </form>
             <br>
             <hr>
-             
+          
             <div>
-            <p><strong>Shopping list:</strong></p>
-            <ul id="ulToFind">
+              <p><strong>Shopping list:</strong></p>
+              <ul id="ulToFind">
                 <li 
-                        v-for="item in shoppingList" 
-                        v-bind:class="{ impClass: item.important }"
-                        v-on:click="item.found=!item.found"
-                        v-show="item.found">
-                          {{ item.name }}, {{ item.number}}
+                  v-for="item in shoppingList" 
+                  v-bind:class="{ impClass: item.important }"
+                  v-on:click="item.found=!item.found"
+                  v-show="!item.found">
+                    {{ item.name }}, {{ item.number}}
                 </li>
-                </ul>
-            <ul id="ulFound">
-                    <li 
-                      v-for="item in shoppingList" 
-                      v-bind:class="{ impClass: item.important }"
-                      v-on:click="item.found=!item.found"
-                      v-show="item.found">
-                        {{ item.name }}, {{ item.number}}
-                    </li>
-                  </ul>
-              
+              </ul>
+              <ul id="ulFound">
+                <li 
+                  v-for="item in shoppingList" 
+                  v-bind:class="{ impClass: item.important }"
+                  v-on:click="item.found=!item.found"
+                  v-show="item.found">
+                    {{ item.name }}, {{ item.number}}
+                </li>
+              </ul>
             </div>
-        </div>
+          </div> 
 
         <!-- Grid Container for the rest of the sections -->
         <div class="grid-container">
