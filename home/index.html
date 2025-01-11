@@ -58,25 +58,20 @@
             <br>
             <hr>
              
+            <div>
             <p><strong>Shopping list:</strong></p>
             <ul id="ulToFind">
-            <li 
-                    v-for="item in shoppingList" 
-                    v-bind:class="{ impClass: item.important }"
-                    v-on:click="item.found=!item.found"
-                    v-show="!item.found">
-                      {{ item.name }}, {{ item.number}}
-            </li>
-            </ul>
-            <ul id="ulFound">
-            <li 
-                    v-for="item in shoppingList" 
-                    v-bind:class="{ impClass: item.important }"
-                    v-on:click="item.found=!item.found"
-                    v-show="item.found">
-                      {{ item.name }}, {{ item.number}}
-            </li>
-            </ul>
+                <li 
+                  v-for="(item, index) in shoppingList" 
+                  :key="index"
+                  v-bind:class="{ impClass: item.important }"
+                  v-on:click="item.found=!item.found"
+                  v-show="!item.found">
+                  {{ item.name }}, {{ item.number }}
+                </li>
+              </ul>
+              
+            </div>
         </div>
 
         <!-- Grid Container for the rest of the sections -->
