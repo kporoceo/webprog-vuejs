@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/flexbox-grid.css?version=0.1">
   <link rel="stylesheet" href="css/pink.css?version=0.1">
   <link rel="stylesheet" href="css/images.css?version=0.1">
-  <link rel="stylesheet" href="css/shopping.css?version=0.2">
+  <link rel="stylesheet" href="css/shopping.css?version=0.5">
 </head>
 <body>
 
@@ -60,7 +60,7 @@
              
             <div>
             <p><strong>Shopping list:</strong></p>
-            <ul id="ulFound">
+            <ul id="ulToFind">
                 <li 
                         v-for="item in shoppingList" 
                         v-bind:class="{ impClass: item.important }"
@@ -69,6 +69,15 @@
                           {{ item.name }}, {{ item.number}}
                 </li>
                 </ul>
+            <ul id="ulFound">
+                    <li 
+                      v-for="item in shoppingList" 
+                      v-bind:class="{ impClass: item.important }"
+                      v-on:click="item.found=!item.found"
+                      v-show="item.found">
+                        {{ item.name }}, {{ item.number}}
+                    </li>
+                  </ul>
               
             </div>
         </div>
