@@ -60,16 +60,15 @@
              
             <div>
             <p><strong>Shopping list:</strong></p>
-            <ul id="ulToFind">
+            <ul id="ulFound">
                 <li 
-                  v-for="(item, index) in shoppingList" 
-                  :key="index"
-                  v-bind:class="{ impClass: item.important }"
-                  v-on:click="item.found=!item.found"
-                  v-show="!item.found">
-                  {{ item.name }}, {{ item.number }}
+                        v-for="item in shoppingList" 
+                        v-bind:class="{ impClass: item.important }"
+                        v-on:click="item.found=!item.found"
+                        v-show="item.found">
+                          {{ item.name }}, {{ item.number}}
                 </li>
-              </ul>
+                </ul>
               
             </div>
         </div>

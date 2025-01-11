@@ -1,9 +1,9 @@
 const app3 = Vue.createApp({
     data() {
       return {
-        itemName: '', // Initialize as an empty string
-        itemNumber: 0, // Initialize as zero
-        itemImportant: false, // Initialize as false
+        itemName: null,
+        itemNumber: null,
+        itemImportant: false,
         shoppingList: [
           { name: 'Tomatoes', number: 5, important: false, found: false },
           { name: 'Bread', number: 1, important: false, found: false },
@@ -12,24 +12,18 @@ const app3 = Vue.createApp({
       }
     },
     methods: {
-      addItem() {
-        if (!this.itemName || this.itemNumber <= 0) {
-          alert('Please provide a valid item name and number!');
-          return;
-        }
+      addItem(){
         let item = {
           name: this.itemName,
-          number: parseInt(this.itemNumber), // Ensure number is an integer
+          number: this.itemNumber,
           important: this.itemImportant,
           found: false
-        };
-        this.shoppingList.push(item);
-        // Reset the form fields
-        this.itemName = '';
-        this.itemNumber = 0;
-        this.itemImportant = false;
+        }
+        this.shoppingList.push(item)
+        this.itemName = null
+        this.itemNumber = null  
+        this.itemImportant = false
       }
     }
-  });
-  app3.mount('#app3');
-  
+  })
+app3.mount('#app3')
