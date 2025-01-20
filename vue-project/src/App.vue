@@ -1,5 +1,5 @@
 <template>
-  <h1>good afternoon! 🌇</h1>  
+  <h1>Good Afternoon! 🌇</h1>  
 </template>
 
 <script></script>
