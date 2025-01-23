@@ -1,5 +1,5 @@
 <template>
-    <div class="apples" v-on:click="countClicks">
+    <div class="cherries" v-on:click="countClicks">
         <h2>{{ name }}</h2>
         <p>{{ message }}</p>
         <p id="red">You have clicked me {{ clicks }} times.</p>
@@ -10,8 +10,8 @@
 export default {
     data() {
         return {
-            name: 'Apples',
-            message: 'I like apples',
+            name: 'Cherries',
+            message: 'I like cherries!',
             clicks: 0
         }
     },
