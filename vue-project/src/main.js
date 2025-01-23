@@ -12,6 +12,6 @@ const app = createApp(App)
 app.component('food-item', FoodItem)
 app.component('food-item2', FoodItem2)
 app.component('food-item3', FoodItem3)
-app.component('personal-profile, PersonalProfile)
+app.component('personal-profile', PersonalProfile)
 
 app.mount('#app')
