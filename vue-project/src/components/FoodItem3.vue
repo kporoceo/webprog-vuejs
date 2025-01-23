@@ -28,4 +28,4 @@ export default {
     font-weight: bold;
     color: rgb(144, 12, 12);
 }
-</style
+</style>
