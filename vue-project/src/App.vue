@@ -34,7 +34,7 @@
     width: 120px;
     margin: 10px;
     padding: 10px;
-    background-color: lightorange;
+    background-color: salmon;
   }
 
 #app > div:hover {
