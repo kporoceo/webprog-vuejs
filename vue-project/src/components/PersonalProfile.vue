@@ -1,6 +1,6 @@
 <template>
 <div>
-    <header> <h1> Personal Profile Web Page> </h1> </header>
+    <header> <h1> Personal Profile Web Page </h1> </header>
         <div class="grid-container">
             <div class="about-me">
                 <h3>About Me:</h3>
