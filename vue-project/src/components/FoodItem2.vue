@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mango">
     <h2>{{ name }}</h2>
     <p>{{ message }}</p>
   </div>
@@ -10,15 +10,15 @@ export default {
   data() {
     return {
       name: 'Mangoes',
-      message: 'I like Mangoes'
+      message: 'I like Mangoes!'
     }
   }
 };
 </script>
 
 <style>
-  #app > div {
-        border: dashed black 1px;
+  .mango {
+        border: dashed black 1.5px;
         display: inline-block;
         margin: 10px;
         padding: 10px;
