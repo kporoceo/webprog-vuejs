@@ -2,6 +2,9 @@ import { createApp } from 'vue'
 
 import App from './App.vue'
 
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap'; // Import Bootstrap JavaScript
+
 import FoodItem from './components/FoodItem.vue'
 import FoodItem2 from './components/FoodItem2.vue'
 import FoodItem3 from './components/FoodItem3.vue'
