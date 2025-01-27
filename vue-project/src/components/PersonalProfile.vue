@@ -114,7 +114,6 @@
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
-  float: left;
   width: 180px;
 }
 
