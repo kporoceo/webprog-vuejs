@@ -105,6 +105,7 @@
             <div class="desc">My Sister and I 👯‍♀️</div>
         </div>
     </div>
+  </div>
 </div>
 </template>
 
@@ -130,7 +131,6 @@ div.gallery img {
   width: 100%;
   height: auto;
 }
-
 
 body {
     font-family: Arial, sans-serif;
