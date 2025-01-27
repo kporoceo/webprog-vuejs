@@ -112,24 +112,27 @@
 <script></script>
 
 <style>
-div.gallery-container {
+.gallery-container {
   display: flex; 
   flex-wrap: wrap; 
-  gap: 10px; 
+  gap: 20px; 
   justify-content: center; 
-  align-items: flex-start; 
 }
 
-div.gallery {
+.gallery {
   margin: 5px;
   border: 1px solid #ccc;
-  width: 180px;
-  flex: 0 1 auto;
+  width: 180px; 
 }
 
-div.gallery img {
+.gallery img {
   width: 100%;
   height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
 }
 
 body {
