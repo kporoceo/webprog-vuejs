@@ -81,21 +81,21 @@
           <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20w%20cousins.jpg?raw=true">
             <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20w%20cousins.jpg?raw=true" alt="pk with cousins" width="600" height="400">
           </a>
-            <div class="desc">Add a description of the image here</div>
+            <div class="desc">PK Full House.</div>
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousisns%202.jpg?raw=true">
             <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousisns%202.jpg?raw=true" alt="pk with cousins 2" width="600" height="400">
           </a>
-            <div class="desc">Add a description of the image here</div> 
+            <div class="desc">PK Ladies.</div> 
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousins%203.jpg?raw=true">
             <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousins%203.jpg?raw=true" alt="pk with cousins 3" width="600" height="400">
           </a>
-            <div class="desc">Add a description of the image here</div>
+            <div class="desc">My Cousins and Siblings.</div>
         </div>
 
         <div class="gallery">
@@ -167,7 +167,7 @@ body {
     gap: 20px;
 }
 
-.about-me, .education, .course, .it-experience, .hobbies, .goals, .picture-gallery {
+.about-me, .education, .course, .it-experience, .hobbies, .goals, .gallery {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
