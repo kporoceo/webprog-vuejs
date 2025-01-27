@@ -7,7 +7,6 @@
         <p class="mt-3 fst-italic text-light-emphasis">Aspiring IT Professional | Co-owner of PETKINGDOM PH</p>
     </div>
 
-``
     <div class="grid-container">
         <div class="about-me">
             <h3>About Me:</h3>
@@ -75,7 +74,6 @@
     </div>
 
     <div class="gallery-container">
-    <div class="gallery">
         <h3>Picture Gallery:</h3>
         <div class="gallery">
           <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20w%20cousins.jpg?raw=true">
@@ -105,7 +103,6 @@
             <div class="desc">My Sister and I 👯‍♀️</div>
         </div>
     </div>
-  </div>
 </div>
 </template>
 
