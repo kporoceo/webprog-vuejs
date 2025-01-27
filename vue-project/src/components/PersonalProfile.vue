@@ -5,6 +5,7 @@
         <h1>Personal Profile</h1>
         <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pfp.jpg?raw=true" 
             width="100" height="100" alt="Profile Picture">
+        <p class="mt-3 fst-italic text-light-emphasis">Aspiring IT Professional | Co-owner of PETKINGDOM PH</p>
     </div>
 
 ``
@@ -60,23 +61,49 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
+                        <td>TOPIK Certification 🇰🇷</td>
+                        <td>Part-time Job (Internship Shortcut 🤔)</td>
+                        <td>Graduation! (Super Delayed 🥶)</td>
                     </tr>
                     <tr>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
+                        <td>Cybersecurity Credentials</td>
+                        <td>More Credentials</td>
+                        <td>Professionally enter the IT Industry</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
 
-    <div class="picture-gallery">
+    <div class="gallery">
         <h3>Picture Gallery:</h3>
-        <p>WIP</p>
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20w%20cousins.jpg?raw=true">
+            <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20w%20cousins.jpg?raw=true" alt="pk with cousins" width="600" height="400">
+          </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousisns%202.jpg?raw=true">
+            <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousisns%202.jpg?raw=true" alt="pk with cousins 2" width="600" height="400">
+          </a>
+            <div class="desc">Add a description of the image here</div> 
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousins%203.jpg?raw=true">
+            <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousins%203.jpg?raw=true" alt="pk with cousins 3" width="600" height="400">
+          </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/me%20n%20mary%20pk.jpg?raw=true">
+            <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/me%20n%20mary%20pk.jpg?raw=true" alt="me and mary" width="600" height="400">
+          </a>
+            <div class="desc">My sister and I.</div>
+        </div>
     </div>
 </div>
 </template>
@@ -84,6 +111,27 @@
 <script></script>
 
 <style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -154,4 +202,6 @@ table th {
 table td {
     background-color: #f9f9f9;
 }
+
+
 </style>
