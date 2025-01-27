@@ -1,6 +1,5 @@
 <template>
 <div class="container">
-    <!-- Personal Profile Section -->
     <div class="personal-profile">
         <h1>Personal Profile</h1>
         <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pfp.jpg?raw=true" 
@@ -75,34 +74,35 @@
         </div>
     </div>
 
+    <div class="gallery-container">
     <div class="gallery">
         <h3>Picture Gallery:</h3>
         <div class="gallery">
           <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20w%20cousins.jpg?raw=true">
             <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20w%20cousins.jpg?raw=true" alt="pk with cousins" width="600" height="400">
           </a>
-            <div class="desc">PK Full House.</div>
+            <div class="desc">PK Full House 🏠</div>
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousisns%202.jpg?raw=true">
             <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousisns%202.jpg?raw=true" alt="pk with cousins 2" width="600" height="400">
           </a>
-            <div class="desc">PK Ladies.</div> 
+            <div class="desc">PK Ladies 💃</div> 
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousins%203.jpg?raw=true">
             <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20with%20cousins%203.jpg?raw=true" alt="pk with cousins 3" width="600" height="400">
           </a>
-            <div class="desc">My Cousins and Siblings.</div>
+            <div class="desc">My Cousins and Siblings 💞</div>
         </div>
 
         <div class="gallery">
           <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/me%20n%20mary%20pk.jpg?raw=true">
             <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/me%20n%20mary%20pk.jpg?raw=true" alt="me and mary" width="600" height="400">
           </a>
-            <div class="desc">My sister and I.</div>
+            <div class="desc">My Sister and I 👯‍♀️</div>
         </div>
     </div>
 </div>
@@ -111,14 +111,19 @@
 <script></script>
 
 <style>
+div.gallery-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+  justify-content: center; 
+  align-items: flex-start; 
+}
+
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
+  flex: 0 1 auto;
 }
 
 div.gallery img {
@@ -126,10 +131,6 @@ div.gallery img {
   height: auto;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 
 body {
     font-family: Arial, sans-serif;
