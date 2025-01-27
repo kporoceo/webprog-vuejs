@@ -74,7 +74,7 @@
     </div>
 
     <div class="gallery-container">
-        <h3>Picture Gallery:</h3>
+        <h3>Gallery</h3> <br>
         <div class="gallery">
           <a target="_blank" href="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20w%20cousins.jpg?raw=true">
             <img src="https://github.com/kporoceo/webprog-image-repo/blob/main/pk%20w%20cousins.jpg?raw=true" alt="pk with cousins" width="600" height="400">
